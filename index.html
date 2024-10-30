@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X/O Game with AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>X/O Game with AI</h1>
+
+  <div class="board"> 
+    <div class="cell" data-index="0"></div>
+    <div class="cell" data-index="1"></div>
+    <div class="cell" data-index="2"></div>
+    <div class="cell" data-index="3"></div>
+    <div class="cell" data-index="4"></div>
+    <div class="cell" data-index="5"></div>
+    <div class="cell" data-index="6"></div>
+    <div class="cell" data-index="7"></div>
+    <div class="cell" data-index="8"></div>
+  </div>
+
+  <div class="controls">
+    <button onclick="setAlgorithm('BFS')">BFS</button>
+    <button onclick="setAlgorithm('DFS')">DFS</button>
+    <button onclick="setAlgorithm('UCS')">UCS</button>
+    <button onclick="setAlgorithm('IDS')">IDS</button>
+    <button id="reset-button">Reset Game</button>
+  </div>
+
+  <p id="status-message"></p>
+  <p id="chosen-algorithm">Chosen Technique: BFS</p>
+  <p id="algorithm-description"></p>
+
+  <div id="future-boards"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
