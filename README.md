@@ -1,4 +1,4 @@
-# Sudoku Using CSP Algorithms
+# Tic-Tac-Toe Using Search Algorithms
 A web-based Tic-Tac-Toe game with an AI opponent built using HTML, CSS, and JavaScript. The AI employs various search algorithms such as BFS, DFS, Uniform-Cost Search (UCS), and Iterative Deepening Search (IDS) to determine the best moves.
 
 ## 🛠️ Features
