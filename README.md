@@ -46,27 +46,37 @@ Open the application:
 - Choose AI Technique:
   - Click on one of the buttons labeled BFS, DFS, UCS, or IDS to switch the search algorithm.
 
-- Customize Difficulty:
-    Adjust the difficulty in the createPuzzle() function inside script.js by changing the number of cells displayed (default: 60).
+- Reset the Game:
+    Click the "Reset Game" button to clear the board and start fresh.
+
+- Future Moves Preview:
+    After each move, potential future boards are displayed to show what the AI is thinking.
 
 
 ⚙️ How It Works
 
-- Puzzle Generation:
-    The createPuzzle() function removes a random number of cells from a fully filled Sudoku board to create a playable puzzle.
+- AI Search Techniques:
+    The AI uses BFS, DFS, UCS, or IDS to search for the optimal move in the current state.
 
-- Backtracking Solver:
-    The solvePuzzle() function applies backtracking with forward checking, trying different values until the board is solved.
+- Game Logic:
+    The makeMove() function updates the board and checks for winners.
+    The aiMove() function uses the selected algorithm to calculate the next move.
 
-- UI Handling:
-    Buttons are locked during solving to prevent interference, and the board updates with each step of the solution.
+- Reset Functionality:
+    The resetGame() function clears the game board and restores the initial state.
+
+- Algorithm Descriptions:
+    BFS: Explores nodes level by level.
+    DFS: Explores as deep as possible along a branch.
+    UCS: Expands the least-cost nodes first.
+    IDS: Uses increasing depth limits to explore deeper over time.
 
 
 
 💡 Acknowledgments
 
-Sudoku Algorithm Reference
-Backtracking and forward checking inspiration from various online sources.
+- The AI search techniques are inspired by common AI strategies such as BFS, DFS, UCS, and IDS.
+- Game logic and styling are adapted for ease of use and responsiveness.
 
 
 📧 Contact
